@@ -76,3 +76,60 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// ---------- WHATSAPP ORDER FORM ----------
+
+const orderForm = document.getElementById("orderForm");
+
+if (orderForm) {
+
+    orderForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("customerName").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const service =
+            document.getElementById("service").value;
+
+        const quantity =
+            document.getElementById("quantity").value;
+
+        const message =
+            document.getElementById("message").value.trim();
+
+
+        const whatsappNumber = "918250366736";
+
+
+        const whatsappMessage =
+`Hello SAHIL T SHIRT PRINTING 👋
+
+I want to place an order.
+
+👤 Name: ${name}
+📱 Mobile: ${phone}
+🖨️ Service: ${service}
+📦 Quantity: ${quantity}
+
+📝 Order Details:
+${message || "No additional details"}
+
+Thank you.`;
+
+
+        const whatsappURL =
+            "https://wa.me/" +
+            whatsappNumber +
+            "?text=" +
+            encodeURIComponent(whatsappMessage);
+
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+}
