@@ -339,7 +339,80 @@
         </div>
 
     </section>
+<!-- ORDER FORM -->
+<section class="order" id="order">
 
+    <div class="container">
+
+        <div class="section-title">
+            <p>PLACE YOUR ORDER</p>
+            <h2>Order Now</h2>
+            <span>Apni details bhariye aur WhatsApp par order bhejiye</span>
+        </div>
+
+        <form id="orderForm" class="order-form">
+
+            <div class="form-group">
+                <label for="customerName">Your Name *</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Apna naam likhiye"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Mobile Number *</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Apna mobile number"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service *</label>
+
+                <select id="service" required>
+                    <option value="">-- Service Select Karein --</option>
+                    <option value="T-Shirt Printing">T-Shirt Printing</option>
+                    <option value="Coffee Mug Printing">Coffee Mug Printing</option>
+                    <option value="Banner Design">Banner Design</option>
+                    <option value="Custom Printing">Custom Printing</option>
+                    <option value="Sticker Printing">Sticker Printing</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity *</label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    min="1"
+                    placeholder="Kitne pieces?"
+                    required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Order Details</label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Design, size, colour ya koi special requirement likhiye..."></textarea>
+            </div>
+
+            <button type="submit" class="order-btn">
+                📱 Send Order on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
