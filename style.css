@@ -726,3 +726,42 @@ footer {
     }
 
 }
+/* ---------- CONTACT EXTRA ---------- */
+
+.call-button {
+    background: #111111 !important;
+    color: #ffffff !important;
+}
+
+.call-button:hover {
+    background: #333333 !important;
+}
+
+.map-box {
+    max-width: 850px;
+    margin: 40px auto 0;
+    padding: 45px 25px;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 18px;
+    border: 1px solid #eeeeee;
+}
+
+.map-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.map-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.map-box p {
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.map-box .btn {
+    display: inline-block;
+}
